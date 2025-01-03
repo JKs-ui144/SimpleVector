@@ -14,9 +14,9 @@ private:
 
 public:
 	SimpleVector() : currentCapacity(10), currentSize(0) {
-		data = new T[10];
+		data = new T[currentCapacity];
 		cout << "기본 생성자가 생성되었습니다." << endl;
-		cout << currentSize << endl;
+		cout << currentCapacity << endl;
 	}
 
 	SimpleVector(int capacity) : currentCapacity(capacity), currentSize(0) {
